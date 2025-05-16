@@ -8,6 +8,12 @@
 		"LS_blobstorage_connectionString": {
 			"value": ""
 		},
+		"LS_SQL_properties_typeProperties_server": {
+			"value": "maheshandra5.database.windows.net"
+		},
+		"LS_SQL_properties_typeProperties_database": {
+			"value": "HRP"
+		},
 		"containerUri": {
 			"value": ""
 		},
