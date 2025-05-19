@@ -121,7 +121,13 @@
 				"outputs": [
 					{
 						"referenceName": "ds_archive",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"archivefilename": {
+								"value": "@activity('copying data form source').output",
+								"type": "Expression"
+							}
+						}
 					}
 				]
 			},
