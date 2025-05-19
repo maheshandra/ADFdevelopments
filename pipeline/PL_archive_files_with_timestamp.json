@@ -121,7 +121,7 @@
 							]
 						},
 						{
-							"name": "archiv",
+							"name": "archive",
 							"type": "Copy",
 							"dependsOn": [
 								{
@@ -174,8 +174,14 @@
 							},
 							"inputs": [
 								{
-									"referenceName": "ds_archive",
-									"type": "DatasetReference"
+									"referenceName": "DS_getmetadata",
+									"type": "DatasetReference",
+									"parameters": {
+										"FILENAME": {
+											"value": "@item().name",
+											"type": "Expression"
+										}
+									}
 								}
 							],
 							"outputs": [
@@ -244,7 +250,7 @@
 							"type": "Delete",
 							"dependsOn": [
 								{
-									"activity": "archiv",
+									"activity": "archive",
 									"dependencyConditions": [
 										"Succeeded"
 									]
