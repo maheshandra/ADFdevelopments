@@ -1,0 +1,112 @@
+{
+	"name": "DS_source_metadata",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_blobstorage",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"Filename": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "sourcefiles"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Prop_0",
+				"type": "String"
+			},
+			{
+				"name": "Age",
+				"type": "String"
+			},
+			{
+				"name": "Sex",
+				"type": "String"
+			},
+			{
+				"name": "Ethnicity",
+				"type": "String"
+			},
+			{
+				"name": "BMI",
+				"type": "String"
+			},
+			{
+				"name": "Waist_Circumference",
+				"type": "String"
+			},
+			{
+				"name": "Fasting_Blood_Glucose",
+				"type": "String"
+			},
+			{
+				"name": "HbA1c",
+				"type": "String"
+			},
+			{
+				"name": "Blood_Pressure_Systolic",
+				"type": "String"
+			},
+			{
+				"name": "Blood_Pressure_Diastolic",
+				"type": "String"
+			},
+			{
+				"name": "Cholesterol_Total",
+				"type": "String"
+			},
+			{
+				"name": "Cholesterol_HDL",
+				"type": "String"
+			},
+			{
+				"name": "Cholesterol_LDL",
+				"type": "String"
+			},
+			{
+				"name": "GGT",
+				"type": "String"
+			},
+			{
+				"name": "Serum_Urate",
+				"type": "String"
+			},
+			{
+				"name": "Physical_Activity_Level",
+				"type": "String"
+			},
+			{
+				"name": "Dietary_Intake_Calories",
+				"type": "String"
+			},
+			{
+				"name": "Alcohol_Consumption",
+				"type": "String"
+			},
+			{
+				"name": "Smoking_Status",
+				"type": "String"
+			},
+			{
+				"name": "Family_History_of_Diabetes",
+				"type": "String"
+			},
+			{
+				"name": "Previous_Gestational_Diabetes",
+				"type": "String"
+			}
+		]
+	}
+}

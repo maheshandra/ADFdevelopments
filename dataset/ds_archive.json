@@ -5,11 +5,20 @@
 			"referenceName": "LS_blobstorage",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"archivefilename": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
+				"fileName": {
+					"value": "@dataset().archivefilename",
+					"type": "Expression"
+				},
 				"container": "archive"
 			},
 			"columnDelimiter": ",",
